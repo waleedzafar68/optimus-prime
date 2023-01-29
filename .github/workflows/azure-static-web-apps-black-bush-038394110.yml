@@ -45,7 +45,7 @@ jobs:
            ls
            cd dist
            ls
-          output_location: "../dist/Optimus" # Built app content directory - optional
+          output_location: "dist/Optimus" # Built app content directory - optional
    
         env:
           NPM_CONFIG_LEGACY_PEER_DEPS: true
