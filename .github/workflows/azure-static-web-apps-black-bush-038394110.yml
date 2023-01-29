@@ -46,7 +46,10 @@ jobs:
            cd dist
            ls
           output_location: "dist/Optimus" # Built app content directory - optional
-   
+      - name: ls2
+        run: |
+         ls
+         
         env:
           NPM_CONFIG_LEGACY_PEER_DEPS: true
 ###### End of Repository/Build Configurations ######
