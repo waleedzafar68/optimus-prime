@@ -26,7 +26,7 @@ jobs:
          npm install --legacy-peer-deps
          npm init -y
          npm run build
-         cd /src
+         cd src
          npm start
       - name: Build And Deploy
         id: builddeploy
