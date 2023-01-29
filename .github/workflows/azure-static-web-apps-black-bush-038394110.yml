@@ -34,6 +34,8 @@ jobs:
           ###### End of Repository/Build Configurations ######
       - name: Install Node.js
         uses: actions/setup-node@v1
+      - name: ls1
+        run: cd "optimus css"
       - name: ls
         run: ls
       - name: Install npm dependencies
