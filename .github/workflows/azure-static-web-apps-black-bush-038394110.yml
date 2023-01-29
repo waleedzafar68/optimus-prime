@@ -26,6 +26,7 @@ jobs:
          npm install --legacy-peer-deps
          npm init -y
          npm run build --if-present
+         cd src
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
