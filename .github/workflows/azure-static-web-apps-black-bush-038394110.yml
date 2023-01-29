@@ -20,13 +20,6 @@ jobs:
           submodules: true
       - name: ls
         run: ls
-      - name: Install npm dependencies
-        run: | 
-         cd optimus\ css
-         npm install --legacy-peer-deps
-         npm init -y
-         npm run build
-         cd src
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
