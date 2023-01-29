@@ -1,0 +1,151 @@
+<main>
+  <nav class="navbar is-fixed-top is-transparent" id="main-nav" role="navigation" aria-label="main navigation">
+    <span class="menu-trigger">
+        <i class="menu-trigger-bar top"></i>
+        <i class="menu-trigger-bar middle"></i>
+        <i class="menu-trigger-bar bottom"></i>
+      </span>
+      <span class="close-trigger">
+        <i class="close-trigger-bar left"></i>
+        <i class="close-trigger-bar right"></i>
+      </span>
+    <div class="navbar-brand">
+      <a class="navbar-item" [routerLink] = "['/home']" >
+        <img  src="assets/images/optimus.png" >
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+     
+
+      <div class="navbar-end">
+        <a [routerLink]="['/home/']" class="navbar-item homeButton ">
+          <span style="background-image: url(assets/images/svg/home-run.svg);"></span>
+          Home
+        </a>
+        <a [routerLink]="['/home']" class="navbar-item aboutButton ">
+          <span style="background-image: url(assets/images/svg/question.svg);"></span>
+          About us
+        </a>
+        <a [routerLink]="['/services/']" class="navbar-item servicesButton">
+          <span style="background-image: url(assets/images/svg/support2.svg);"></span>
+
+          Services
+        </a>
+        <a [routerLink]="['/cafm/']" class="navbar-item CAFMButton">
+          <span style="background-image: url(assets/images/svg/cloud-computing.svg);"></span>
+
+          CAFM
+        </a>
+         <a [routerLink]="['/advantage/']" class="navbar-item advantageButton">
+          <span style="background-image: url(assets/images/svg/cheap.svg);"></span>
+
+          Advantage
+        </a>
+        <a [routerLink]="['/team/']" class="navbar-item teamButton">
+          <span style="background-image: url(assets/images/svg/team.svg);"></span>
+
+          Our Team
+        </a>
+        <a [routerLink]="['/contact/']" class="navbar-item contactButton">
+          <span style="background-image: url(assets/images/svg/contact-us.svg);"></span>
+
+          Contact us
+        </a>
+        
+      </div>
+    </div>
+  </nav>
+  <div class="myContainer">
+      <div class="inner-myContainer">
+          <i class="menu-bg top"></i>
+          <i class="menu-bg middle"></i>
+          <i class="menu-bg bottom"></i>
+        <div class="menu-myContainer">
+          <ul class="menu">
+            <li>
+               <a  [routerLink] = "['/home']"  class="navbar-item homeButton">
+                <span ></span>
+
+                Home
+              </a>
+            </li>
+            <li>
+               <a  [routerLink] = "['/home']"  class="navbar-item aboutButton">
+                <span ></span>
+
+                About us
+              </a>
+            </li>
+            <li>
+              <a [routerLink] = "['/services']"  class="navbar-item servicesButton">
+                <span></span>
+                Services
+              </a>
+            </li>
+            <li>
+              <a [routerLink] = "['/cafm']"  class="navbar-item CAFMButton">
+                <span></span>
+                CAFM
+              </a>
+            </li>
+            <li>
+               <a [routerLink] = "['/advantage']"  class="navbar-item advantageButton">
+                <span></span>
+                Advantage
+              </a>
+            </li>
+            <li>
+              <a [routerLink] = "['/team']"  class="navbar-item teamButton">
+                <span></span>
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a [routerLink] = "['/contact']"  class="navbar-item contactButton">
+                <span></span>
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </div>
+
+
+  <!-- route outet -->
+  <div class="router-outlet is-relative" [@routeAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+    <router-outlet #o="outlet"></router-outlet>
+  </div>
+
+
+
+
+
+
+
+
+  <footer class="footer">
+      <section class="section is-relative contact " style="height: 300px">
+        <div class="half-shape"></div>
+        <div class="divide-shape">
+           
+        </div>
+      </section>
+       <div class="content has-text-centered " style="z-index: 1111;">
+              <h1 class="white subtitle is-6 has-text-weight-light higher-z">   © Copyright {{ anio }}  Optimus FM. All rights reserved.</h1>
+              <h6 class="white   has-text-weight-light higher-z " style="font-size: 12px">Developed by <a class="gold" href="https://nirrob.com">Nirrob</a> </h6>
+            </div>
+  </footer>
+</main>
+
+
+<!-- <a href="#" id="scroll" style="display: none;"><span></span></a> -->
+<a   id="scroll" class="scroll-down" ></a>
