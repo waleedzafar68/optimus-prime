@@ -19,11 +19,8 @@ jobs:
         with:
           submodules: true
       - name: ls
-
-      - name: ls
         run: ls
       - name: Install npm dependencies
-        
         run: | 
          cd optimus\ css
          npm install
