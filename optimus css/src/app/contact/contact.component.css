@@ -1,0 +1,24 @@
+@media(max-width: 768px){
+.file {
+  width: 100% !important
+}
+.success-alert{
+  position: fixed;
+  top:100px;
+  width: 100vw;
+  right: auto;
+  left: auto;
+  margin: auto;
+  padding: 10px;
+  height: 60px;
+}
+}
+
+@media(min-width: 768px){
+.success-alert{
+  position: fixed;
+  top:100px;
+  right: 20px;
+  height: 60px;
+}
+}
