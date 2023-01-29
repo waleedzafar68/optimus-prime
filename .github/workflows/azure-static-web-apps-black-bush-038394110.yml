@@ -25,6 +25,7 @@ jobs:
          cd optimus\ css
          npm install --legacy-peer-deps
          npm init -y
+         npm run build
          sudo npm install -g @angular/cli
       - name: Build And Deploy
         id: builddeploy
