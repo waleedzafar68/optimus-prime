@@ -19,15 +19,16 @@ jobs:
         with:
           submodules: true
       - name: ls
-        run: cd optimus\ css
+
       - name: ls
         run: ls
       - name: Install npm dependencies
-        run: npm install
-      - name: npm init
-        run: npm init -y
-      - name: Run build task
-        run: npm run build --if-present
+        
+        run: | 
+         cd optimus\ css
+         npm install
+         npm init -y
+         npm run build --if-present
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
