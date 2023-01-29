@@ -28,8 +28,6 @@ jobs:
          npm run build
          run: | 
            ls
-           cd ./optimus css
-           ls
            cd dist
            ls
       - name: Build And Deploy
@@ -44,8 +42,6 @@ jobs:
           app_location: "/optimus css/src" # App source code path
           api_location: "" # Api source code path - optional
           run: | 
-           ls
-           cd ./optimus css
            ls
            cd dist
            ls
