@@ -34,8 +34,6 @@ jobs:
           ###### End of Repository/Build Configurations ######
       - name: Install Node.js
         uses: actions/setup-node@v1
-      - name: Install dependencies
-        run: cd ..
       - name: ls
         run: ls
       - name: Install npm dependencies
