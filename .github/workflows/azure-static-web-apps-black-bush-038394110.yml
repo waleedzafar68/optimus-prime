@@ -18,6 +18,16 @@ jobs:
       - uses: actions/checkout@v3
         with:
           submodules: true
+      - name: Install Node.js
+        uses: actions/setup-node@v1
+      - name: ls
+        run: ls
+      - name: Install npm dependencies
+        run: npm install
+      - name: npm init
+        run: npm init -y
+      - name: Run build task
+        run: npm run build --if-present
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
@@ -32,18 +42,7 @@ jobs:
           output_location: "" # Built app content directory - optional
           skip_app_build: true
           ###### End of Repository/Build Configurations ######
-      - name: Install Node.js
-        uses: actions/setup-node@v1
-      - name: ls1
-        run: cd /optimus\ css
-      - name: ls
-        run: ls
-      - name: Install npm dependencies
-        run: npm install
-      - name: npm init
-        run: npm init -y
-      - name: Run build task
-        run: npm run build --if-present
+
        
 
   close_pull_request_job:
