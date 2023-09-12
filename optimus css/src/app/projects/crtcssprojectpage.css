@@ -1,0 +1,293 @@
+.picture-shape{
+	top: 20px;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+	z-index: 1 !important;
+
+	/* (100% 0%, 0% 100%, 100% -100%); */
+	background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.main{
+
+	height: 700px;
+	width: 100%;
+	background: linear-gradient(90deg, #eeeef0 73%, rgba(253, 253, 255, 0.945) 100%);
+	/* background-color: skyblue; */
+	position: relative;
+	margin-top: 20px;
+	
+	}
+	.child1{
+	 z-index:0;
+		clip-path: polygon(100% 0, 0 0, 0 100%);
+	
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	background-image: url(/assets/images/projects/taiba.jpeg);
+	height: 100%;
+	width: 70%;
+	left:0;
+	background-repeat: no-repeat;
+
+	
+	}
+	
+	.child2{
+	 z-index:1;
+		clip-path: polygon(0 75%, 100% 0%, 100% 100%, 0 100%);
+	
+	position: absolute;
+	
+	background-image: url(/assets/images/projects/tower.jpeg);
+	height: 100%;
+	width: 70%;
+	top: 0;
+	right: 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+	}
+	
+	.recta{
+	    top: 300px;
+		z-index: 2;
+	
+		height: 40%;
+		width: 50%;
+		/* height: 400px;
+			width: 700px; */
+	
+		clip-path: polygon(0 0, 68% 0, 100% 36%, 0 36%);
+		background: linear-gradient(90deg, #3E3E40 73%, #3e3e40c4 100%);
+		/* background-color: orange; */
+		position: absolute;
+	
+	
+	}
+	
+	.smallrecta{
+		z-index:4;
+		top:320px;
+	  height: 40px;
+	  width: 50%;
+		  
+		  /* clip-path: polygon(0 0, 68% 0, 100% 36%, 0 36%); */
+		  /* background: linear-gradient(90deg, #f2cd70 73%, #3e3e40c4 100%); */
+	  background-color: rgb(242, 51, 4);
+	  position: absolute;
+	  left:100px;
+
+
+
+	}
+	.recta2{
+	  top:325px;
+	  z-index:3;
+	/*   background-image: url(https://t3.ftcdn.net/jpg/02/90/89/76/360_F_290897614_7RdAsk2GmumcGWZ2qklmV74hKlNmznSx.jpg); */
+
+	height: 40%;
+	width: 50%;
+		/* height: 200px;
+		width: 200px; */
+	
+		clip-path: polygon(0 0, 100% 0, 100% 36%, 23% 36%);
+		background: linear-gradient(90deg, #3E3E40 73%, #3e3e40c4 100%);
+		/* background: linear-gradient(90deg, rgba(254,182,37,1) 73%, rgba(255,244,185,1) 100%); */
+	/* background-color: orange; */
+	position: absolute;
+	
+	right:40px;
+	}
+
+
+
+
+
+
+/* .main{
+
+height: 600px;
+width: 100%;
+background-color: blue;
+position: relative;
+
+}
+.child1{
+z-index: 1;
+	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+position: absolute;
+bottom: 0;
+right: 0;
+background-image: url(/assets/images/projects/taiba.jpeg);
+height: 100%;
+width: 70%;
+
+}
+
+.child2{
+
+	clip-path: polygon(100% 0, 0% 100%, 0 0);
+
+position: absolute;
+
+background-image: url(/assets/images/projects/taiba.jpeg);
+height: 100%;
+width: 70%;
+top: 0;
+left: 0;
+}
+
+.recta{
+	height: 300px;
+	width: 255px;
+z-index: 2;
+	clip-path: polygon(11% 34%, 100% 34%, 75% 53%, 0 53%);;
+background-color: white;
+position: absolute;
+
+} */
+
+.picture-shape2{
+	
+	/* clip-path: polygon(100% 0, 0 100%, 100% 100%);
+
+position: absolute;
+bottom: 0;
+right: 0;
+/* background-image: url(/assets/images/projects/taiba.jpeg); */
+/* height: 100%;
+width: 70%; */ 
+
+-webkit-clip-path: polygon(100% 0, 100% 80%, 0 80%, 0 23%);
+top: 20px;
+	height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+    clip-path: polygon(100% 0, 0 100%, 0 0);
+	z-index: 1 !important;
+
+	/* (100% 0%, 0% 100%, 100% -100%); */
+	background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+
+
+
+.picture-shape.taiba{
+	background-image: url(/assets/images/projects/taiba.jpeg);
+}
+.picture-shape.water{
+	background-image: url(/assets/images/projects/water.jpeg);
+}
+.picture-shape.gulf{
+	background-image: url(/assets/images/projects/gulf.jpeg);
+}
+.picture-shape.mall{
+	background-image: url(/assets/images/projects/mall.jpeg);
+}
+
+.picture-shape.tower
+{
+	background-image: url(/assets/images/projects/tower.jpeg);
+}
+.picture-shape.abyat
+{
+	background-image: url(/assets/images/projects/abyat.jpeg);
+}
+ .upper-shape{
+	top: -20px;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(90deg, #3E3E40 73%, #3e3e40c4 100%);
+	/*clip-path: polygon(100% 0, 100% 10%, 0 100%, 0 90%);*/
+	z-index: 11;
+	clip-path:polygon(100% 0, 100% 30%, 44% 80%, 44% 50%)
+}
+ .lower-shape{
+	top: 80px;
+	position: absolute;
+	height: 100vh;
+	width: 100%;
+	background: linear-gradient(90deg, rgba(254,182,37,1) 73%, rgba(255,244,185,1) 100%);
+	/*clip-path: polygon(100% 0, 100% 10%, 0 100%, 0 90%);*/
+	z-index: 11;
+    clip-path:polygon(100% 0, 100% 10%, 44% 60%, 44% 50%)
+}
+
+
+
+  
+
+  
+
+p.pt{
+	color: rgb(255, 172, 5);
+	font-size: 50px;
+	font-weight: 100;
+}
+p.pt2{
+	margin-top: 25px;
+font-size: 15px;
+	
+	color: white;
+}
+
+.ta{
+	
+	display: flex;
+}
+
+
+/* @media only screen and (max-width: 600px) {
+	.main {
+	  background-color: rgb(5, 170, 225);
+	}
+  } */
+  /* @media only screen and (max-width: 700px) { */
+	/* For mobile phones: */
+	/* .main {
+	  width: 100%;
+	  background-color: #0099cc;
+	}
+  }  */
+/* 
+  @media(max-width: 768px) {
+
+	.main {
+	  -webkit-overflow-scrolling: touch !important;
+	  max-height: calc(100vh - 3.25rem) !important;
+	  background-color: #0099cc;
+	}
+  
+  } */
+  @media(max-width: 768px) {
+	.main{
+	  background-image: url('/assets/images/smart-sm.jpg') !important;
+	  background-repeat: no-repeat;
+	  background-position: right center;
+	  background-size: cover;
+	}
+	p.pt{
+		color: rgb(255, 172, 5);
+		font-size: 20px;
+		font-weight: 100;
+	}
+	p.pt2{
+		color: rgb(248, 242, 230);
+		font-size: 20px;
+		font-weight: 100;
+	}
+  }

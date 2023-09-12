@@ -56,6 +56,10 @@ export class HomeComponent implements OnInit {
               .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
                   $('.myrow', el).removeClass('animatedHalfSpeed delay-more fadeInLeft');
               });
+              $('.myrow', el).addClass('animatedHalfSpeed delay-more fadeInLeft')
+              .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                  $('.myrow', el).removeClass('animatedHalfSpeed delay-more fadeInLeft');
+              });
 
         });
       });

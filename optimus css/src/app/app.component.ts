@@ -199,9 +199,9 @@ export class AppComponent {
             y: "23%",
             ease: Power4.easeInOut,
             onComplete: function() {
-              menuTop.css('background-color','#ffffff');
-              menuMiddle.css('background-color','#ffffff');
-              menuBottom.css('background-color','#ffffff');
+              menuTop.css('background-color','#041725');
+              menuMiddle.css('background-color','#041725');
+              menuBottom.css('background-color','#041725');
               container.css('z-index', '0');
               menuStatus= false;
             }
