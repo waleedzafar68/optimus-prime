@@ -33,6 +33,8 @@ jobs:
           api_location: "" # Api source code path - optional
           output_location: "dist/Optimus" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
+        env:
+          NPM_CONFIG_LEGACY_PEER_DEPS: true
       - name: List directories
         run: ls -la
 
